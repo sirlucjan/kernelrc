@@ -79,9 +79,9 @@ source=("http://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.xz"
 prepare() {
     cd ${_srcname}
 
-    ### Add upstream patch
-        #msg "Add upstream patch"
-        #patch -Np1 -i "${srcdir}/patch-${pkgver}"
+   ### Add upstream patch
+       #msg "Add upstream patch"
+       #patch -Np1 -i "${srcdir}/patch-${_pkgver}"
         
    ### Add patch from stable-review
        msg "Add patch from stable-review"  
