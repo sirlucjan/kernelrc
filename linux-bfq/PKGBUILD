@@ -52,7 +52,7 @@ _srcname=linux-4.0
 pkgver=4.0.2
 _pkgver=4.0.1
 __pkgver=4.0.2-rc2
-pkgrel=0
+pkgrel=0.1
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
@@ -442,7 +442,7 @@ sha512sums=('ce13d2c1c17908fd9a4aa42bb6348a0cb13dd22e560bd54c61b8bfdf62726d6095f
             '607c0fa70375bff2f51387c4984e6f2da18c786a58281ab5c28f6b49c6da22578832afa96503f26a18575ffed677b2f9522a822b5db856b76c4144dd5b59ff6b'
             'd9d28e02e964704ea96645a5107f8b65cae5f4fb4f537e224e5e3d087fd296cb770c29ac76e0ce95d173bc420ea87fb8f187d616672a60a0cae618b0ef15b8c8'
             '0d829d7be3b9e94d01db346932c75c64de6d2ade58f7dc7c766f54b1bcc113eb160a3b3ccaa88659ef1fd81e4dc85c1d1d42f32328b682ec675e28e92b5b676d'
-            '1b3100f596d2dd33cdcec5664868bc3b81f5610b259a54433b5cc7c98931bba6baf84a09a05c66a2aaf9ae42bf8dc744894bb578ec77a7b02bd12d49f427dffb')
+            '9d0ce12ac44a3d71cc9e96a05dc5d3251a230f4571fffd5fffc92b9d0c45ab4782918226175050aaca70120583020aaaa5bca576f15add476b8b94d827ac0451')
             
 validpgpkeys=(
               'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
