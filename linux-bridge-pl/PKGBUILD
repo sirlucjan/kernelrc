@@ -60,10 +60,10 @@ pkgbase=linux-bridge-pl
 pkgname=('linux-bridge-pl' 'linux-bridge-pl-headers' 'linux-bridge-pl-docs')
 _kernelname=-bridge-pl
 _srcname=linux-4.0
-pkgver=4.0.1
-#_pkgver=4.0.1
-__pkgver=4.0.1-rc1
-pkgrel=0.3
+pkgver=4.0.2
+_pkgver=4.0.1
+__pkgver=4.0.2-rc2
+pkgrel=0
 arch=('i686' 'x86_64')
 url="http://kerneldedup.org/"
 license=('GPL2')
@@ -79,10 +79,10 @@ _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v4.9+_kernel_v3.15+.patc
 
 source=("http://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.sign"
-        #"http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
-        #"https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
-        "https://www.kernel.org/pub/linux/kernel/v3.x/stable-review/patch-${__pkgver}.xz"
-        "https://www.kernel.org/pub/linux/kernel/v3.x/stable-review/patch-${__pkgver}.sign"
+        "http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.sign"
         #"http://kerneldedup.org/download/uksm/${_uksmvernel}/uksm-${_uksmvernel}-for-${_uksmname}.patch" # website often went down
         "uksm-${_uksmvernel}-for-linux-${_uksmname}.patch"
         "http://ck.kolivas.org/patches/bfs/4.0/4.0/${_bfspatch}"
@@ -101,8 +101,8 @@ prepare() {
     cd ${_srcname}
 
      ### Add upstream patch
-         #msg "Add upstream patch"
-         #patch -Np1 -i "${srcdir}/patch-${_pkgver}"
+         msg "Add upstream patch"
+         patch -Np1 -i "${srcdir}/patch-${_pkgver}"
          
      ### Add patch from stable-review
          msg "Add patch from stable-review"  
@@ -124,6 +124,8 @@ prepare() {
        patch -Np1 -i "${srcdir}/hz-default_1000.patch"
        patch -Np1 -i "${srcdir}/hz-no_default_250.patch"
        patch -Np1 -i "${srcdir}/bfs462-ist-change.patch"
+       patch -Np1 -i "${srcdir}/bfs462-rtmn-fix.patch"
+       patch -Np1 -i "${srcdir}/bfs462-update_inittask.patch"
     
    ### Patch source with BFQ
        msg "Patching source with BFQ patches"
@@ -477,7 +479,9 @@ package_linux-bridge-pl-docs() {
 
 sha512sums=('ce13d2c1c17908fd9a4aa42bb6348a0cb13dd22e560bd54c61b8bfdf62726d6095f130c59177a2fe4793b7dc399481bf10d3556d1d571616000f180304e5a995'
             'SKIP'
-            '8a3d00170f80212cf6811d2efcfa834b764ecfdffb674ac70d36e6397b1221c4fb0003d13393ac1c59aeefc3bf437c243228d74893a32a4aba3c39f1da60aa89'
+            '3f4547c759a7ce9f75671676d9d57e516ba8a6617d1c195aa5d728bc10926e200ac4285aa2612a7e3a8f4e4f4e3038e250563f139fb4f76d0f93b73222eb7d30'
+            'SKIP'
+            '6f5fc69503de8efe9af34c7a00e13ce7dd7b993855c3b91874a8ff72d2214ee2df43b14b64ff7edd1c4f10180371b8d56a5425ae8c058d015a5bb4634e563af8'
             'SKIP'
             'ce46c47a1685f5014f4ada55b9ee6292255a383f83c04ac84ae922d16fef0687ebf09e7a6b211f23c6d1156312ef812c950805979893792f3e19b6c643d2fb81'
             '576f7383bc4ade80a9180859d235d5d9c273a927ffbd4b36e0d7abd223b5998d628ce2a061025c5506ecf21b57dd10cb08bf9ef40e26f7203f84c01466d98d3a'
@@ -490,8 +494,8 @@ sha512sums=('ce13d2c1c17908fd9a4aa42bb6348a0cb13dd22e560bd54c61b8bfdf62726d6095f
             '76bf6a9f22b023ab8f780884f595dac1801d150ecd94f88da229c5c9ea98d2c3ef8add01ff7e18e4cbbfa5e6e9c022c4042ee62c779a8485203c1b0e082b8ccc'
             '796a262faa081a8a3decca67c734f989f1394aa2f0baad6dc0ce68aebd3994689726c6b301ead4174ecf86b50c5e40c22cffc8542282bbcef01aebd2526dcc85'
             'd9d28e02e964704ea96645a5107f8b65cae5f4fb4f537e224e5e3d087fd296cb770c29ac76e0ce95d173bc420ea87fb8f187d616672a60a0cae618b0ef15b8c8'
-            'a44869c7356d6f637cce6e9f7c59da9f25d56ca0acb0df8d71d679fe4787b4f2d072847a06a4b1f708c81aa99b07c166cdc793a7431dd6cfdd29a626d5ae5ebb'
-            '6b12a9272ad01f288e805673ac139be4083447c3af43cc5fb47beabe606a74f5d199a1d8e278dc07f2784573487b185a9d5b1b96e53937d1c66b1ee790cf65c4')
+            'c8cfe371a85624afbc89bf70a2b77cf2e95d3e5c2f58ba0f0ad23e815640923266b365016cb390b3f5555d5ae3f6ee1b4a7f3b3254283f742b6c21404fe34eff'
+            '1463d2e4cc2bed371ec8b6b3e7fc44fb2e0d13b64072ba9536472c919e84f46a8ffe483408b54e246c58370e02d17267719411601279c58117b527d79ac5ee6b')
             
 validpgpkeys=(
               'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
