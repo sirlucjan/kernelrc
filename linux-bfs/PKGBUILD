@@ -43,7 +43,7 @@ _NUMAdisable=y
 # This PKGBUILD will call it directly to probe all the modules you have logged!
 #
 # More at this wiki page ---> https://wiki.archlinux.org/index.php/Modprobed_db
-_localmodcfg=y
+_localmodcfg=
 
 # Use the current kernel's .config file
 # Enabling this option will use the .config of the RUNNING kernel rather than
@@ -67,7 +67,7 @@ _srcname=linux-4.0
 pkgver=4.0.2
 _pkgver=4.0.1
 __pkgver=4.0.2-rc2
-pkgrel=0.1
+pkgrel=0.2
 arch=('i686' 'x86_64')
 url="http://ck-hack.blogspot.de"
 license=('GPL2')
