@@ -23,6 +23,8 @@ _makegconfig=
 # http://ck-hack.blogspot.com/2013/09/bfs-0441-311-ck1.html?showComment=1378756529345#c5266548105449573343
 _1k_HZ_ticks=y
 
+### Do not disable NUMA until CK figures out why doing so causes panics for
+### some users!
 # NUMA is optimized for multi-socket motherboards.
 # A single multi-core CPU actually runs slower with NUMA enabled.
 # See, https://bugs.archlinux.org/task/31187
