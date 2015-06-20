@@ -62,10 +62,10 @@ pkgbase=linux-bridge-pl
 pkgname=('linux-bridge-pl' 'linux-bridge-pl-headers' 'linux-bridge-pl-docs')
 _kernelname=-bridge-pl
 _srcname=linux-4.0
-pkgver=4.0.5
-_pkgver=4.0.4
-__pkgver=4.0.5-rc1
-pkgrel=0.1
+pkgver=4.0.6
+_pkgver=4.0.5
+__pkgver=4.0.6-rc1
+pkgrel=0
 arch=('i686' 'x86_64')
 url="http://kerneldedup.org/"
 license=('GPL2')
@@ -493,9 +493,9 @@ package_linux-bridge-pl-docs() {
 
 sha512sums=('ce13d2c1c17908fd9a4aa42bb6348a0cb13dd22e560bd54c61b8bfdf62726d6095f130c59177a2fe4793b7dc399481bf10d3556d1d571616000f180304e5a995'
             'SKIP'
-            '403a0c9a4bee314cd0f46f3d9bf9122e61d02ff4f9b91027b44718beb5ba2970fdec665f189ba89bd169984a96120f1478ebbf4eaa9872939c11b6b5024c5bb7'
+            '377371371752eb706053282ee296f82b3af0c3cf84c346091b1e347c8d00fcf6787c5b51c76955af3f61e9c20c30035b110368ee3ba2587871f0dbc92826de32'
             'SKIP'
-            '336f9bb887804e340913cc7a8e240c9ee9cd6529d50b0fe8cdc87fa4ba7f34722d774c663420cefd0a7d5983758afadaacbf3464ee0fe4b269df8da0c6eca301'
+            '331d49ed5093e8f350109f111c8ab58e4b8d54ce88a076405a628ba48b9f858db6fbe25b07667468b3c231e4e4039082b7efd9e425016b9795e20849fd10b1b9'
             'SKIP'
             'ce46c47a1685f5014f4ada55b9ee6292255a383f83c04ac84ae922d16fef0687ebf09e7a6b211f23c6d1156312ef812c950805979893792f3e19b6c643d2fb81'
             '576f7383bc4ade80a9180859d235d5d9c273a927ffbd4b36e0d7abd223b5998d628ce2a061025c5506ecf21b57dd10cb08bf9ef40e26f7203f84c01466d98d3a'
