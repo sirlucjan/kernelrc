@@ -49,28 +49,29 @@ pkgbase=linux-bfq
 pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _kernelname=-bfq
 _srcname=linux-4.1
-pkgver=4.1.1
-#_pkgver=4.1.0
-__pkgver=4.1.1-rc1
+pkgver=4.1.2
+_pkgver=4.1.1
+__pkgver=4.1.2-rc1
 pkgrel=0
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
 options=('!strip')
 makedepends=('kmod' 'inetutils' 'bc')
-_bfqpath="http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.1.0-v7r8"
+_bfqrel=v7r8
+_bfqpath="http://algo.ing.unimo.it/people/paolo/disk_sched/patches/4.1.0-${_bfqrel}"
 #_bfqpath="https://pf.natalenko.name/mirrors/bfq/4.1.0-v7r8/"
 _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v4.9+_kernel_v3.15+.patch"
 
 source=("http://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.sign"
-        #"http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
-        #"https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
+        "http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
         "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.sign"
-        "${_bfqpath}/0001-block-cgroups-kconfig-build-bits-for-BFQ-v7r8-4.1.patch"
-        "${_bfqpath}/0002-block-introduce-the-BFQ-v7r8-I-O-sched-for-4.1.patch"
-        "${_bfqpath}/0003-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-v7r8-for-4.1.0.patch"
+        "${_bfqpath}/0001-block-cgroups-kconfig-build-bits-for-BFQ-${_bfqrel}-4.1.patch"
+        "${_bfqpath}/0002-block-introduce-the-BFQ-${_bfqrel}-I-O-sched-for-4.1.patch"
+        "${_bfqpath}/0003-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-${_bfqrel}-for-4.1.0.patch"
         "http://repo-ck.com/source/gcc_patch/${_gcc_patch}.gz"
         'linux-bfq.preset'
         'change-default-console-loglevel.patch'
@@ -82,8 +83,8 @@ prepare() {
     cd ${_srcname}
 
     ### Add upstream patch
-        #msg "Add upstream patch"
-        #patch -Np1 -i "${srcdir}/patch-${_pkgver}"
+        msg "Add upstream patch"
+        patch -Np1 -i "${srcdir}/patch-${_pkgver}"
         
     ### Add patch from stable-review
         msg "Add patch from stable-review"  
@@ -440,7 +441,9 @@ package_linux-bfq-docs() {
 
 sha512sums=('168ef84a4e67619f9f53f3574e438542a5747f9b43443363cb83597fcdac9f40d201625c66e375a23226745eaada9176eb006ca023613cec089349e91751f3c0'
             'SKIP'
-            '3b817eb09061534001aaf331fe362a9d593abf5bdd82d3b50c3dd728eef6c47dcefea1b02d4a0792ef974e9e4a89f1e0e107de4bed380d01944dc14084139ff9'
+            '2ea80302c413193e8d39ff736f6ac2eefc70e1394cfef1bfd7b672ff30b6c2d17191e62a2a0126c5363b419c86a23e28d46ffc61e512c5640b61519c50c7a16a'
+            'SKIP'
+            '63a33e110ec6dbcac0bd629724bfb785df4446da8a8722dc510dbca1fbd45c94b5bc655dda43bb32a98ee4f6933b7c27950998bb89b560ad03bdb8d7d4a54c6a'
             'SKIP'
             '383cd020ab882389731ef78abca727eccc8247ed82b95c89df93d7065bfde093b82e32190ad1fb29b37de35eb20b40339f2c02ad694a3978884255b193f5bc1a'
             'f7bcb50e7de166e0d89194a3cad1feae99c4a5a9918e8af691d7635ed8ef64762ff2af4702dc6ba0eef0fc01ad75173abddbf01ae89bc6e03ace5e54f4098b12'
