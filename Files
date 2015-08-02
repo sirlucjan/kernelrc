@@ -9,10 +9,7 @@
 │   ├── linux-bfq.install
 │   └── linux-bfq.preset
 ├── linux-bfs
-│   ├── 0004-block-loop-convert-to-per-device-workqueue.patch
-│   ├── 0005-block-loop-avoiding-too-many-pending-per-work-I-O.patch
 │   ├── PKGBUILD
-│   ├── bfs462-nosubmit.patch
 │   ├── change-default-console-loglevel.patch
 │   ├── config
 │   ├── config.x86_64
@@ -51,4 +48,4 @@
     ├── linux-uksm-ck.preset
     └── uksm-0.1.2.4-beta-for-linux-v4.0.patch
 
-5 directories, 46 files
+5 directories, 43 files
