@@ -2,8 +2,6 @@
 ├── Files
 ├── README.md
 ├── linux-bfq
-│   ├── 0001-e1000e-Fix-tight-loop-implementation-of-systime-read.patch
-│   ├── 0001-netfilter-conntrack-use-nf_ct_tmpl_free-in-CT-synpro.patch
 │   ├── PKGBUILD
 │   ├── change-default-console-loglevel.patch
 │   ├── config
@@ -11,7 +9,6 @@
 │   ├── linux-bfq.install
 │   └── linux-bfq.preset
 ├── linux-bfs
-│   ├── 0000-fix_potential_deadlock_in_reqsk_queue_unlink.patch
 │   ├── PKGBUILD
 │   ├── change-default-console-loglevel.patch
 │   ├── config
@@ -51,4 +48,4 @@
     ├── linux-uksm-ck.preset
     └── uksm-0.1.2.4-beta-for-linux-v4.0.patch
 
-5 directories, 46 files
+5 directories, 43 files
