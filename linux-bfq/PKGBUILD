@@ -54,8 +54,8 @@ _kernelname=-bfq
 _srcname=linux-4.2
 pkgver=4.2.4
 _pkgver=4.2.3
-__pkgver=4.2.4-rc1
-pkgrel=0
+__pkgver=4.2.4-rc2
+pkgrel=0.1
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
@@ -442,7 +442,7 @@ sha512sums=('a87bbce3c0c6d810a41bbba1c0dcaae80dc38dded9f8571e97fa4ee5a468d655daf
             'SKIP'
             '08ea0f7da5892ab564310562d511c631a41a06681a0bc602176cdae0827c762bc33804970f66185f4ba27af6eaaf9f0297d5e81fdb0c7705fd8c2df4539d0186'
             'SKIP'
-            'a27ea33b4d6f7652cfc2dbd3fd9e445988e799e2dc35f0757985b1a0d4fc3e868ceb0a7e3e9f9829efe6ff5096cadf1e06fd651e7f4f55b835cf2bd2a1db8235'
+            'b4eb8de423073f48f69907f7e7e0539be328a174d9e97ce00d6f0cfcf31cbfb924b1a6d26e134e41ef96847e57cd72979209290360701c7f108195592e253cec'
             'SKIP'
             '077f2c0d5b8e43b295ae52d9b742dc5a7119765016725e4997d0a7cd7941a7622ac057f9bae4b8ed284499853334984f462afbb72ac492806f9657b39ff8503c'
             'a3722869b6bc046a9969efea3c20d96a79ba786a6ce6a834adb70c32453f0c0dac58a456daa842beae53628a30868088efde566be91c7821b74946f2f8dd9c60'
