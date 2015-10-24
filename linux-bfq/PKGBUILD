@@ -52,10 +52,10 @@ pkgbase=linux-bfq
 pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _kernelname=-bfq
 _srcname=linux-4.2
-pkgver=4.2.4
-_pkgver=4.2.3
-__pkgver=4.2.4-rc2
-pkgrel=0.1
+pkgver=4.2.5
+_pkgver=4.2.4
+__pkgver=4.2.5-rc1
+pkgrel=0
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
@@ -440,9 +440,9 @@ package_linux-bfq-docs() {
 
 sha512sums=('a87bbce3c0c6d810a41bbba1c0dcaae80dc38dded9f8571e97fa4ee5a468d655daf52d260911412f7c7da3171a5114e89d63da14b1753b9a3eb2cc38fd89b9ee'
             'SKIP'
-            '08ea0f7da5892ab564310562d511c631a41a06681a0bc602176cdae0827c762bc33804970f66185f4ba27af6eaaf9f0297d5e81fdb0c7705fd8c2df4539d0186'
+            '8d0e7a520db077b718bca91a4380c829b8f2c1bf4a39f1ce05f8c6292059ad7a79a6d0ba380a8fdbcde77d09397d8bae3e7fdf9f45abefdc3c6563933a824554'
             'SKIP'
-            'b4eb8de423073f48f69907f7e7e0539be328a174d9e97ce00d6f0cfcf31cbfb924b1a6d26e134e41ef96847e57cd72979209290360701c7f108195592e253cec'
+            '38351c58421590929a62c67ee1167abef808373da431ffee60e78ad39c672565654310f35969ffc913cd5ea085d94bfc9e9941ddf11703a382bda2a7c46a4e87'
             'SKIP'
             '077f2c0d5b8e43b295ae52d9b742dc5a7119765016725e4997d0a7cd7941a7622ac057f9bae4b8ed284499853334984f462afbb72ac492806f9657b39ff8503c'
             'a3722869b6bc046a9969efea3c20d96a79ba786a6ce6a834adb70c32453f0c0dac58a456daa842beae53628a30868088efde566be91c7821b74946f2f8dd9c60'
@@ -452,7 +452,7 @@ sha512sums=('a87bbce3c0c6d810a41bbba1c0dcaae80dc38dded9f8571e97fa4ee5a468d655daf
             'd9d28e02e964704ea96645a5107f8b65cae5f4fb4f537e224e5e3d087fd296cb770c29ac76e0ce95d173bc420ea87fb8f187d616672a60a0cae618b0ef15b8c8'
             'f8fedf212f655b4241c9aa4b1161b55ef8f67754b278b46714767819206286d6cee3425268df92aa05cd699b01cc4df72266cc7ba5af7da2986bbdef91c90993'
             'b778ce82f1a8b99b883e802136dc8d3248197198f777e4f96cb1e1ea0990250d88141771f6e6e0139e034e63856f0ae82ef5e470eab64e368278e54fb6e62930')
-           
+
 validpgpkeys=(
               'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
               '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
