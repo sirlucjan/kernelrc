@@ -1,52 +1,12 @@
 .
 ├── Files
 ├── README.md
-├── linux-bfq
-│   ├── PKGBUILD
-│   ├── change-default-console-loglevel.patch
-│   ├── config
-│   ├── config.x86_64
-│   ├── linux-bfq.install
-│   └── linux-bfq.preset
-├── linux-bfs
-│   ├── PKGBUILD
-│   ├── bfs464-cond_resched_lock_and cond_resched_softirq.patch
-│   ├── change-default-console-loglevel.patch
-│   ├── config
-│   ├── config.x86_64
-│   ├── linux-bfs.install
-│   └── linux-bfs.preset
-├── linux-bridge-pl
-│   ├── 0004-block-loop-convert-to-per-device-workqueue.patch
-│   ├── 0005-block-loop-avoiding-too-many-pending-per-work-I-O.patch
-│   ├── PKGBUILD
-│   ├── bfs462-nosubmit.patch
-│   ├── change-default-console-loglevel.patch
-│   ├── config
-│   ├── config.x86_64
-│   ├── linux-bridge-pl.install
-│   ├── linux-bridge-pl.preset
-│   └── uksm-0.1.2.4-beta-for-linux-v4.0.patch
-├── linux-uksm
-│   ├── 0004-block-loop-convert-to-per-device-workqueue.patch
-│   ├── 0005-block-loop-avoiding-too-many-pending-per-work-I-O.patch
-│   ├── PKGBUILD
-│   ├── change-default-console-loglevel.patch
-│   ├── config
-│   ├── config.x86_64
-│   ├── linux-uksm.install
-│   ├── linux-uksm.preset
-│   └── uksm-0.1.2.4-beta-for-linux-v4.0.patch
-└── linux-uksm-ck
-    ├── 0004-block-loop-convert-to-per-device-workqueue.patch
-    ├── 0005-block-loop-avoiding-too-many-pending-per-work-I-O.patch
+└── linux-bfq
     ├── PKGBUILD
-    ├── bfs462-nosubmit.patch
     ├── change-default-console-loglevel.patch
     ├── config
     ├── config.x86_64
-    ├── linux-uksm-ck.install
-    ├── linux-uksm-ck.preset
-    └── uksm-0.1.2.4-beta-for-linux-v4.0.patch
+    ├── linux-bfq.install
+    └── linux-bfq.preset
 
-5 directories, 44 files
+1 directory, 8 files
