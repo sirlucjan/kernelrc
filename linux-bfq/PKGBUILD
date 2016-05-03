@@ -52,9 +52,9 @@ pkgbase=linux-bfq
 pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _kernelname=-bfq
 _srcname=linux-4.5
-pkgver=4.5.2
-_pkgver=4.5.1
-__pkgver=4.5.2-rc1
+pkgver=4.5.3
+_pkgver=4.5.2
+__pkgver=4.5.3-rc1
 pkgrel=0
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
@@ -445,9 +445,9 @@ package_linux-bfq-docs() {
 
 sha512sums=('cb0d5f30baff37dfea40fbc1119a1482182f95858c883e019ee3f81055c8efbdb9dba7dfc02ebcc4216db38f03ece58688e69efc0fce1dade359af30bd5426de'
             'SKIP'
-            '07b66cf30374e9ffa45c5fee1f451f2281cea496abd02a53eb1a099c207fe57e860d510aaf6e81f6f40a1d2c655da5aaf58e57197825dc6949b1fa017ac4d7b8'
+            'cc0ba1c2205ab44d41c9792e03e0164cc8bb79eae3d324d138f61ef714513d06abdedc5467d6f0b5fa6601d47032cea66840c01104dfe8f5b606c76483a5355a'
             'SKIP'
-            '72ab183a9359831f329b99c5d04f8000b59a09bdb8a543f841df31a7ce01de31cee870a1c205da32c410b475bac430bb75a056e08ac0f05bbe3805dfa5a1f00b'
+            '2259a5da0011d613313ffac0db09a4cd4740dcfba85d7f390d9f04cd601bd382658d0749872b5b2ad3c4d4558496bd3ee9bdb83710658004dde85bc347a534dc'
             'SKIP'
             'f15460f31c3401356c29459ff880be4c14f468a568c7cf75af162219ace9ddef79499cc6817289c019915bc5af7dd680485def1a4fe4786856dd47390e7f661e'
             '11adc1e6cd3dae38c632f7a3c8c203a9cd13b504e315360caa41bc28677b60e6744890fffe32b42d09251b0a66e89f3c961feb6fb78ad27d10b71ab22cfde6ce'
