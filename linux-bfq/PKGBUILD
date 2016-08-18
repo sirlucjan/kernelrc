@@ -52,9 +52,9 @@ pkgbase=linux-bfq
 pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _kernelname=-bfq
 _srcname=linux-4.7
-pkgver=4.7.1
-_pkgver=4.7
-__pkgver=4.7.1-rc1
+pkgver=4.7.2
+_pkgver=4.7.1
+__pkgver=4.7.2-rc1
 pkgrel=0
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
@@ -69,8 +69,8 @@ _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v4.9+_kernel_v3.15+.patc
 
 source=("http://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.sign"
-        #"http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
-        #"https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
+        "http://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/patch-${_pkgver}.sign"
         "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${__pkgver}.sign"
         "${_bfqpath}/0001-block-cgroups-kconfig-build-bits-for-BFQ-${_bfqrel}-4.7.0.patch"
@@ -86,8 +86,8 @@ prepare() {
     cd ${_srcname}
 
     ### Add upstream patch
-        #msg "Add upstream patch"
-        #patch -Np1 -i "${srcdir}/patch-${_pkgver}"
+        msg "Add upstream patch"
+        patch -Np1 -i "${srcdir}/patch-${_pkgver}"
         
     ### Add patch from stable-review
         msg "Add patch from stable-review"  
@@ -453,7 +453,9 @@ package_linux-bfq-docs() {
 
 sha512sums=('e8c02583e17e4fc4214fef694825fcb78c898266f1624deb1cdf56ab5c5fdfa669c5221122a7cf0d502ed6f921ff3797634acd9d294d29e98e3faa8a21920185'
             'SKIP'
-            'd0409be6107bcc09f8d4fb982a02132632036ba095ad139d82f90f09698695cd162362bcc767c92e9b2b373b7062a0fb32f983ce1fa6f96f30b211db6c0947ca'
+            '3c5d941ac007ca4d6e1a7cc0f967d6d213ff86887c9f11f09012fe18ea20cc9e14776c7fc7475d83162376bd67d19c43fa0313da7439d8312b6a9d800ebc5bc8'
+            'SKIP'
+            '28292f5a81f6eb85799752d70226636938f13a15fb0a7ed56ae2bdc905d3fa98fbc04a912424359915a17ffd6c40b734858090c91f2e8d4649f68c194d802069'
             'SKIP'
             '0759a2f48377d38fd331f243c9d49ca63059b2388cfcd46e2f88194d5a97741d2546e044807fe983065de2dcdefdf66197fa6e2630bb6afd0cc8abc3f76c5f01'
             '53fb9471f477e02e132ad4b61fb2381c4ca3268ac43d268a5a40b2ddc6df26ccadf322cd696a80ec51073a6fb1c763a3dd4dbad516dda9cea6c7e6b1da21914c'
@@ -462,8 +464,8 @@ sha512sums=('e8c02583e17e4fc4214fef694825fcb78c898266f1624deb1cdf56ab5c5fdfa669c
             '62fdd5c0a060a051b64093d71fbb028781061ccb7a28c5b06739a0b24dac0945740d9b73ff170784f60005a589774bcc14f56523ec51557eb3a677f726ec34cf'
             '607c0fa70375bff2f51387c4984e6f2da18c786a58281ab5c28f6b49c6da22578832afa96503f26a18575ffed677b2f9522a822b5db856b76c4144dd5b59ff6b'
             'd9d28e02e964704ea96645a5107f8b65cae5f4fb4f537e224e5e3d087fd296cb770c29ac76e0ce95d173bc420ea87fb8f187d616672a60a0cae618b0ef15b8c8'
-            'ef0e5daadea68ca2220fbbf531c82ce060507844bd860a18596b519e43942162544105d66033d551cab8436a1f263aa20cca46d7f4e60abf44b661bed00d10b1'
-            '806086f249024493f98f0aac279d0172b2595c12d09d6182581c432bd69311c3174808cb85add19cdab14c3f7fa513f43e65214cfc0bb1cbd31bd4684b6fd7ed')
+            'b9c5d6cd76856de9e9238418f526d6978e6ce18e103db39d9517ff2d4bf0ef7dd4b9c1d0ccc1e686e0bbf8825978644098b29fff8d840869a68565c1362e797e'
+            '4ed837b7e64eb25c850089858f499920e4d602b39f6fcafd012d11273aa1dfa552f99604868a4b8636ee97297401826c34bc2e57eb9420d7c10565a550087e28')
             
 validpgpkeys=(
               'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
