@@ -51,10 +51,10 @@ _use_current=
 pkgbase=linux-bfq
 # pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _srcname=linux-4.8
-pkgver=4.8.10
-_pkgver=4.8.9
-__pkgver=4.8.10-rc1
-pkgrel=0.5
+pkgver=4.8.11
+_pkgver=4.8.10
+__pkgver=4.8.11-rc1
+pkgrel=0
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
@@ -437,7 +437,7 @@ _package-docs() {
     find "${pkgdir}" -type f -exec chmod 444 {} \;
     find "${pkgdir}" -type d -exec chmod 755 {} \;
 
-    # remove a file already in linux package
+    # remove a file already in linux-bfq package
     rm -f "${pkgdir}/usr/lib/modules/${_kernver}/build/Documentation/DocBook/Makefile"
 }
 
@@ -451,9 +451,9 @@ done
 
 sha512sums=('a48a065f21e1c7c4de4cf8ca47b8b8d9a70f86b64e7cfa6e01be490f78895745b9c8790734b1d22182cf1f930fb87eaaa84e62ec8cc1f64ac4be9b949e7c0358'
             'SKIP'
-            'c4a5b85f0a7567f0fe0f24d7729aa71a78dae66294caafff2921f2d56a656ca6d5047c1bff027ad603a7899dd97c33ffa1594cad06e3b844ac0fd30c24c26740'
+            'c8ad31fe9d6a555e5b219cb4e751f633916a66e7d2d4b70a169dc55fe786d9b25000c29950fe39342c6a8a958ad036b4c642fab7e16ece6e6d76eafe794d9a92'
             'SKIP'
-            '8de33cbd34ad74d07341184afcac1487647084bc199be3b796f1e7c24ac2d012aa21334836bef39b7a0e500180670f91215b41804817818eb478fbca874dd29d'
+            '6428934934d60580e0984d0e0ab27ff8c43cf35795d3a50c31796c17e38008324409b6fa9314ac882ccc5e8e5e4122fdc756b5478448f0bf82d53228c20fa1d4'
             'SKIP'
             '95a7b9dc5a6c378b19e199285b5c1c397ca0ca0cf03c42d185b57da68329e59d59294d1879998f4020a0dee10d36c550acf30f28970c82adb2e7604c86424178'
             'dc0649dfe2a5ce8e8879a62df29a4a1959eb1a84e5d896a9cb119d6a85a9bad1b17135371799e0be96532e17c66043d298e4a14b18fad3078a1f425108f888c9'
