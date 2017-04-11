@@ -53,8 +53,8 @@ pkgbase=linux-bfq
 _srcname=linux-4.10
 pkgver=4.10.10
 _pkgver=4.10.9
-__pkgver=4.10.10-rc1
-pkgrel=0
+__pkgver=4.10.10-rc2
+pkgrel=0.1
 arch=('i686' 'x86_64')
 url="http://algo.ing.unimo.it/"
 license=('GPL2')
@@ -435,7 +435,7 @@ sha512sums=('c3690125a8402df638095bd98a613fcf1a257b81de7611c84711d315cd11e2634ab
             'SKIP'
             '867cdcf1e6ceee58dec7eb913e119dcaa75255cef1ad2dd9eb0eead6a918a202e3b6656770422d547a7758236a8589c70d49fa4045de867b77a04480f97c242d'
             'SKIP'
-            'afba4b21b68a1aee78b5ebc995a68b450126ef1f9c1a216a5600e5fea899cc5bf09efdd37897649a4221624fe479a164bc8fdbbee68a1092ad5f9857db96c1aa'
+            '3dc9316a98d1ea3f84a1fe6e7c1101dcaa28e9829508c6cc45b50e83e6d4e3ec4d171281f5f73a9872076ccd245c40ad1121600b9c383d2fd476868e1f9a79fd'
             'SKIP'
             '03f4d45c0b3ac20baea9eaa92591e1749499e084cbca104f55a3ec4cfeda0e6c7fe6766b0eea0bb5bb4cf7f2371992e7a6002aaec09a08386fe2431c9cf0a3a8'
             'c4161e2ff79647b8e8212681c0294b6f160c135728f48adfe61b1089d6242f925584afe4d2ebf0ef9cb650ae45c057d5c7119ce0264d3aeda008bb359b2b2582'
