@@ -2,7 +2,6 @@
 ├── Files
 ├── README.md
 └── linux-bfq
-    ├── 0005-BFQ-update-to-v8r11.patch
     ├── 90-linux.hook
     ├── PKGBUILD
     ├── config.i686
@@ -10,4 +9,4 @@
     ├── linux.install
     └── linux.preset
 
-1 directory, 9 files
+1 directory, 8 files
