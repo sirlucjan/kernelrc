@@ -2,3 +2,4 @@
 
 - linux-bfq
 
+- linux-uksm
