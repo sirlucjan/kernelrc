@@ -4,16 +4,14 @@
 ├── linux-bfq
 │   ├── 90-linux.hook
 │   ├── PKGBUILD
-│   ├── config.i686
-│   ├── config.x86_64
+│   ├── config
 │   ├── linux.install
 │   └── linux.preset
 └── linux-uksm
     ├── 90-linux.hook
     ├── PKGBUILD
-    ├── config.i686
-    ├── config.x86_64
+    ├── config
     ├── linux.install
     └── linux.preset
 
-2 directories, 14 files
+2 directories, 12 files
