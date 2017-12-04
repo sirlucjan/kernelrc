@@ -8,7 +8,6 @@
 │   ├── linux.install
 │   └── linux.preset
 └── linux-uksm
-    ├── 0001-platform-x86-hp-wmi-Fix-tablet-mode-detection-for-co.patch
     ├── 60-linux.hook
     ├── 90-linux.hook
     ├── 99-linux.hook
@@ -17,4 +16,4 @@
     ├── linux.install
     └── linux.preset
 
-2 directories, 15 files
+2 directories, 14 files
