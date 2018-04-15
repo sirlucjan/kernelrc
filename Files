@@ -1,11 +1,5 @@
 .
 ├── Files
-├── linux-bfq
-│   ├── 90-linux.hook
-│   ├── config
-│   ├── linux.install
-│   ├── linux.preset
-│   └── PKGBUILD
 ├── linux-uksm
 │   ├── 0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch
 │   ├── 0002-drm-i915-edp-Only-use-the-alternate-fixed-mode-if-it.patch
@@ -22,4 +16,4 @@
 │   └── PKGBUILD
 └── README.md
 
-2 directories, 20 files
+1 directory, 15 files
