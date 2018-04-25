@@ -51,10 +51,10 @@ _1k_HZ_ticks=
 pkgbase=linux-uksm
 # pkgname=('linux-uksm' 'linux-uksm-headers' 'linux-uksm-docs')
 _srcname=linux-4.16
-pkgver=4.16.4
-_pkgver=4.16.3
-__pkgver=4.16.4-rc3
-pkgrel=0.1
+pkgver=4.16.5
+_pkgver=4.16.4
+__pkgver=4.16.5-rc1
+pkgrel=0
 arch=('x86_64')
 url="https://github.com/dolohow/uksm"
 license=('GPL2')
@@ -387,9 +387,9 @@ done
 
 sha512sums=('ab47849314b177d0eec9dbf261f33972b0d89fb92fb0650130ffa7abc2f36c0fab2d06317dc1683c51a472a9a631573a9b1e7258d6281a2ee189897827f14662'
             'SKIP'
-            '7c7c2c090d7375a923524d88f86a714576321094de94bcfd78d467b78c3b933c2cdb4863db24b0091b28f78ae10a5d4e112c3d150998d552d29e737f043e5fa8'
+            'caa9726e0c9ad4da4dbcebb6b47f08e6575d30f050e7d6087018fae932c0c706e9a03d4b703dd49bc46bc21df08b5c7dff37ac5bb6522d6a6ed3d3b10712e9eb'
             'SKIP'
-            '067688442fcd45dc1a444e5e0cba306e479802390a4e4f2fa995e723def4c6eac3a41961d7cf3f49ecc4faa97ea474387c77f93d7b0bc9d5fba0df43ff8aaa8b'
+            'd0b55bf9d99e496f1043b5a5ae7fcf0f34a24c3abf8c822d19a04276e35ffd30960ec21409489f6a1a145dd00c2a677762481c910405b688ee721c8956217e6d'
             'SKIP'
             '079e34ec7bf3ef36438c648116e24c51e00ea8608a1d8b5776164478522d6a96dcab5fe0431e8e9a6282c11a1edd177e1b68fc971a81717b297e199efc101963'
             'ab962157c2c20faf0bd164a82c2e28ce35fd581d640409ae6419dc2a64c82b7f49e7215149de0bc028dd3d517434160d68127b05137f6b6611641cc871f6c76e'
