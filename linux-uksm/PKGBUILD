@@ -99,14 +99,10 @@ prepare() {
     ### Add patch from stable-review
         msg2 "Add patch from stable-review"  
         patch -p1 -i ../patch-${_stablerc}
-
-    ### Fix naming schema in EXTRAVERSION
-        _rc="$(cat Makefile | grep -m1 -e EXTRAVERSION | grep -o "[[:digit:]]*")"
-        msg2 "Fix naming schema in EXTRAVERSION"
-        sed -i -e "s|EXTRAVERSION = -rc${_rc}|EXTRAVERSION =|g" Makefile
     
     ### Setting version
         msg2 "Setting version..."
+        sed -e "/^EXTRAVERSION =/s/=.*/=/" -i Makefile
         scripts/setlocalversion --save-scmversion
         echo "-$pkgrel" > localversion.10-pkgrel
         echo "$_kernelname" > localversion.20-pkgname
