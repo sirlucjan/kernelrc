@@ -1,7 +1,6 @@
 .
 ├── Files
 ├── linux-uksm
-│   ├── 0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch
 │   ├── 60-linux.hook
 │   ├── 90-linux.hook
 │   ├── 99-linux.hook
@@ -11,4 +10,4 @@
 │   └── PKGBUILD
 └── README.md
 
-1 directory, 10 files
+1 directory, 9 files
