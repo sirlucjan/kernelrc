@@ -52,14 +52,13 @@ _1k_HZ_ticks=
 pkgbase=linux-uksm
 # pkgname=('linux-uksm' 'linux-uksm-headers' 'linux-uksm-docs')
 _major=4.20
-#_minor=11
-#_minorc=$((_minor+1))
-#_rcver=rc1
-#pkgver=${_major}.${_minorc}
-pkgver=${_major}
-#_stable=${_major}.${_minor}
-#_stablerc=${pkgver}-${_rcver}
+_minor=0
+_minorc=$((_minor+1))
+_rcver=rc1
+pkgver=${_major}.${_minorc}
 _stable=${_major}
+#_stable=${_major}.${_minor}
+_stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
 pkgrel=0
 arch=('x86_64')
@@ -77,8 +76,8 @@ _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v8.1+_kernel_v4.13+.patc
 
 source=("https://www.kernel.org/pub/linux/kernel/v4.x/linux-${_stable}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v4.x/linux-${_stable}.tar.sign"
-        #"https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${_stablerc}.xz"
-        #"https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${_stablerc}.sign"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${_stablerc}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v4.x/stable-review/patch-${_stablerc}.sign"
         "${_gcc_path}/${_gcc_patch}"
         "${_uksm_path}/${_uksm_patch}"
         "${_lucjanpath}/arch-patches/0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch"
@@ -100,8 +99,8 @@ prepare() {
     cd ${_srcname}
 
     ### Add patch from stable-review
-        #msg2 "Add patch from stable-review"
-        #patch -p1 -i ../patch-${_stablerc}
+        msg2 "Add patch from stable-review"
+        patch -p1 -i ../patch-${_stablerc}
 
     ### Setting version
         msg2 "Setting version..."
@@ -392,6 +391,8 @@ for _p in "${pkgname[@]}"; do
 done
 
 sha512sums=('e282399beea5da539701aed2bc131abd5bc74a970dcd344163e9d295106dfd700180e672ed546ae5e55bc6b9ac95efd5ca1de2039015c1b7a6fc9c01ea6583d4'
+            'SKIP'
+            'af6d23bffa5f847e6f6d63681b94d28eda9a6ed6d672ce799054d21e0639608e3dee1e4be3fa2e7facde0d2699d65f746e8495019dc054b708e68527faa3f4ca'
             'SKIP'
             'e62aa377a0acc4f63f394e27a0fb7316583ff1a6a6afdfcc97593ddffd7d2bc224cfd70b552cb3fb9513cf6b8db4c2fd913d21ec2380db8cd642e37d4d67370c'
             'af14061bc151ed0b94c7759da1618a4a05d2c7669aec31d6e59a2f4874fe3b5a1774ad8b8f67f6c01daec84aae2dbd464ce4a74c611dd81619a3f4312507f017'
