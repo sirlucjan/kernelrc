@@ -24,7 +24,7 @@ git clone https://gitlab.com/sirlucjan/kernelrc.git
 
 
 ```
-cd /some_path/aur/package_name
+cd /some_path/kernelrc/package_name
 makepkg -srci
 
 ```
