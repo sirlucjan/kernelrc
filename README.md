@@ -1,6 +1,12 @@
 # Kernels with patches from stable-review:
 
+- linux-aufs
+
 - linux-uksm
+
+###### linux-aufs incorporates:
+
+* [AUFS](https://github.com/sfjro/aufs5-standalone) / [AUFS](http://aufs.sourceforge.net) - advanced multi-layered unification filesystem
 
 ###### linux-uksm incorporates:
 
