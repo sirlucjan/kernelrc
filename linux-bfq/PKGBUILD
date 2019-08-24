@@ -85,7 +85,7 @@ _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v9.1+_kernel_v4.13+.patc
 
 source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_stable}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_stable}.tar.sign"
-        "patch-${_stablerc}::https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git/patch/?id=linux-${_major}.y&id2=v${_major}.${_minor}"
+        "patch-${_stablerc}.diff::https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git/patch/?id=linux-${_major}.y&id2=v${_major}.${_minor}"
         "${_gcc_path}/${_gcc_patch}"
         "${_lucjanpath}/${_bfq_path_1}/${_bfq_patch_1}"
         "${_lucjanpath}/${_bfq_path_2}/${_bfq_patch_2}"
@@ -115,7 +115,7 @@ prepare() {
 
     ### Add patch from stable-review
         msg2 "Add patch from stable-review"
-        patch -p1 -i ../patch-${_stablerc}
+        patch -p1 -i ../patch-${_stablerc}.diff
 
     ### Setting version
         msg2 "Setting version..."
