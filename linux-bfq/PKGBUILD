@@ -48,7 +48,7 @@ _1k_HZ_ticks=
 pkgbase=linux-bfq
 # pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _major=5.2
-_minor=11
+_minor=13
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
@@ -390,9 +390,9 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('6116f7b71711a01e741bf1f9b3e20e9d46b3b2d6c1dfadad79742d42a2142e13dfec0c569b21d0cbcf030369b75bb39c27c05f08f3e9594d391d1df4ddbdbbb6'
+sha512sums=('2614fcf9580939c33ada1d6475026d63b021e71f48d1488a31bd9e154f4b2142ae4932d22b7dcbe6ba0ac9cd855ddb74cfa6efc6c3018dd5c9b1063bb3dc5f4d'
             'SKIP'
-            'd42fe04144dbbcb7dca5b35f6b9cd6a6f87857efd1fff6be05812e1a97a3bd4e5108ee35589ccccc17c34f1f85cf6e05e689d6349dbc53910b9dd22efbe1bf9f'
+            'b7398279af8aabeb291b4f5898be91d76233b5f73a9892aa9e06f26b1abc1980cb988807a4fbc8ac1205a5228e8a72b15d7fc76ea8f45a23fedaf5c8230305b9'
             'SKIP'
             'a57192d2989ff816e32970d86320f331be013b2c1d4a236565f33ef41b4092352e7dc560f97a39191d8c5eca8514f646fddc14a1c0168265ca3a470e7a41a2ea'
             '3b8cb12366eb0a47ec996c6274ed484b0c9a53084853bb9f9799b00abf4e2f6543d37bcd83d042cfa837575b6ab79de9c502bcc3212072dcffecd284e57516b4'
