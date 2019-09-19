@@ -48,14 +48,13 @@ _1k_HZ_ticks=
 pkgbase=linux-bfq
 # pkgname=('linux-bfq' 'linux-bfq-headers' 'linux-bfq-docs')
 _major=5.3
-#_minor=0
-#_minorc=$((_minor+1))
-#_rcver=rc1
-pkgver=${_major}
+_minor=0
+_minorc=$((_minor+1))
+_rcver=rc1
+pkgver=${_major}.${_minorc}
 _stable=${_major}
-#pkgver=${_major}.${_minorc}
 #_stable=${_major}.${_minor}
-#_stablerc=${pkgver}-${_rcver}
+_stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
 pkgrel=0
 arch=('x86_64')
@@ -75,8 +74,8 @@ _gcc_patch="enable_additional_cpu_optimizations_for_gcc_v9.1+_kernel_v4.13+.patc
 
 source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_stable}.tar.xz"
         "https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_stable}.tar.sign"
-        #"https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/patch-${_stablerc}.xz"
-        #"https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/patch-${_stablerc}.sign"
+        "https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/patch-${_stablerc}.xz"
+        "https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/patch-${_stablerc}.sign"
         "${_lucjanpath}/${_bfq_path}/${_bfq_patch}"
         "${_gcc_path}/${_gcc_patch}"
         "${_lucjanpath}/arch-patches-sep/0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch"
@@ -99,8 +98,8 @@ prepare() {
     cd ${_srcname}
 
     ### Add patch from stable-review
-        #msg2 "Add patch from stable-review"
-        #patch -p1 -i ../patch-${_stablerc}
+        msg2 "Add patch from stable-review"
+        patch -p1 -i ../patch-${_stablerc}
 
     ### Setting version
         msg2 "Setting version..."
@@ -390,6 +389,8 @@ for _p in "${pkgname[@]}"; do
 done
 
 sha512sums=('6b5edef47c319a3fa7f6c20a3e0903a5acd89ec75e32dc5f99adcb60c9fe118ea312722d9c3d27e2e3900afa2455afb86e83a8b6bb131009bc79ddbe6fb0595d'
+            'SKIP'
+            '55ca538ee159a1d5161c9ba1af3ee01bb29d2f8dca28b9ad42f2a020cce0d26b06a75e5b86090d324d8f04ee53a7963c74d5e0d7ed93a2b72b3af00b31063443'
             'SKIP'
             'bd4c498d69dbeecf92aa7d879162d2666195b2948aa093ad19d05b50bff95e13c54b7fb46e1c0babcea7bf10dbe356c102c9ec3b77fd27917c0c9fdb928b39df'
             '2eb574fbfac6e334d3b06e52e466dbf8e88034515729b6571990b10f75a0fe2a52f188615405c5a695b5820669e595deead44d7961a97c5872359be3435fdf63'
