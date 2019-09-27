@@ -4,6 +4,8 @@
 
 - linux-bfq
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/linux-bfq.svg)](https://repology.org/project/linux-bfq/versions)
+
 ###### linux-aufs incorporates:
 
 * [AUFS](https://github.com/sfjro/aufs5-standalone) / [AUFS](http://aufs.sourceforge.net) - advanced multi-layered unification filesystem
