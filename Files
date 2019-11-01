@@ -7,13 +7,8 @@
 │   ├── config
 │   └── PKGBUILD
 ├── linux-uksm
-│   ├── 60-linux.hook
-│   ├── 90-linux.hook
-│   ├── 99-linux.hook
 │   ├── config
-│   ├── linux.install
-│   ├── linux.preset
 │   └── PKGBUILD
 └── README.md
 
-3 directories, 13 files
+3 directories, 8 files
