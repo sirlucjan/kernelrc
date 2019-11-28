@@ -50,12 +50,12 @@ pkgbase=linux-uksm
 _major=5.3
 _minor=13
 _minorc=$((_minor+1))
-_rcver=rc1
+_rcver=rc2
 pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0
+pkgrel=0.1
 pkgdesc='Linux UKSM'
 arch=('x86_64')
 url="https://github.com/dolohow/uksm"
@@ -349,7 +349,7 @@ done
 
 sha512sums=('bc9e98cc666761b94bae2a13d4cd9f4a5b563526d634e1185653b936e7d53edf1d0d8545835794c2196ab7b91d03651a7035ab41a2492adaefcf307791e050b3'
             'SKIP'
-            '837559324464dc9fd787d77b9cd63ef5b5412e0999fb38d5d50e6cd9a561739b67be474c989a94b1921151d9ac816d809272d5483efdbd9fe2acde0e71263696'
+            'f49770002d18ef54ab65cb7867f6e10f9671557b8504358457a694a4d723f621d553058ddab86bdd445c66271a0fbc2b81e7d458574a9515b045c81afe506bf1'
             'SKIP'
             'b0a5fd9934cb3878ea6cb6563443fa83158f97ca1467a31b0269617d93b609ca84fb62cf3c96eadf6659f59a39cf91f71d9f174f7e222eac89aa0d1ae7de42f7'
             '2eb574fbfac6e334d3b06e52e466dbf8e88034515729b6571990b10f75a0fe2a52f188615405c5a695b5820669e595deead44d7961a97c5872359be3435fdf63'
