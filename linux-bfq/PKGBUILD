@@ -234,7 +234,6 @@ _package() {
   chmod -Rc u=rwX,go=rX "$pkgdir"
 }
 
-
 _package-headers() {
     pkgdesc="Headers and scripts for building modules for the $pkgdesc kernel"
     depends=('linux-bfq')
@@ -337,7 +336,6 @@ _package-docs() {
   chmod -Rc u=rwX,go=rX "$pkgdir"
 }
 
-
 pkgname=("$pkgbase" "$pkgbase-headers" "$pkgbase-docs")
 for _p in "${pkgname[@]}"; do
   eval "package_$_p() {
@@ -359,5 +357,6 @@ sha512sums=('bc9e98cc666761b94bae2a13d4cd9f4a5b563526d634e1185653b936e7d53edf1d0
             'a19d0619404c2815a647942d556d17d9c02c0e2ec6a6461200c61962f27e4d3dcf6577fc426073025c58ee2114de2a96ee6172a0935629dff7a1af1ab7be2b2a')
 
 validpgpkeys=(
+              'ABAF11C65A2970B130ABE3C479BE3E4300411886' # Linus Torvalds
               '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
              )
