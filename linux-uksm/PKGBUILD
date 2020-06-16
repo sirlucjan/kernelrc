@@ -55,7 +55,7 @@ pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0
+pkgrel=0.1
 pkgdesc='Linux UKSM'
 arch=('x86_64')
 url="https://github.com/dolohow/uksm"
@@ -69,7 +69,7 @@ _uksm_path="uksm-patches"
 #_uksm_path="https://raw.githubusercontent.com/dolohow/uksm/master/v5.x"
 #_uksm_path="https://raw.githubusercontent.com/zaza42/uksm/master"
 _uksm_patch="0001-UKSM-for-${_major}.patch"
-_gcc_path="cpu-patches-sep"
+_gcc_path="cpu-patches-v2-sep"
 _gcc_patch="0001-cpu-${_major}-merge-graysky-s-patchset.patch"
 
 source=("https://www.kernel.org/pub/linux/kernel/v5.x/linux-${_stable}.tar.xz"
@@ -336,7 +336,7 @@ sha512sums=('cb10179262dbfed73bc0086ec2a6a3ea5de72aa9910b3b51a8db732e90a56b54a34
             'a9e36ce16c4ef9cf68ff029afff4c6e93d95784b5cfdf3dbbdd171ba8ee3121fffbfcab737470db1d62e32ccef9f5f9eeaa806422e67105fd5a059e23b7ca355'
             'SKIP'
             'c7c5b222578a95cf4df69f9e8fa4ae2fb83075c26f0379676bf78e110f113c6f4ce5fe9d61eaf1c0d04563522e9d5998acd75bedba47866725e89cbbf64a1bba'
-            'f13189fb9cc3488425bc82c45aedaf9ffa8a64f9320e89c18df528afa880ec8982ce9049359eb451690a22c503aace718cf98e89b0cc16b9566249bc7c4c34e0'
+            'ef8c9706da28eeaf98028609bf8ef6f558f7701f985c5925be6388dad0fbe8654fc15a803cd14f99ff89c026d471bbddbdff378b18db3f05f3d952faf943af72'
             '1f04c499a1dc00860ce515b105683daf9081d137bc6830ac6f9e68c8791e5032e583ecb628b5c35a6af80863cbda6222ed3515c6a55a24d193b2a11aa6766668'
             '98e97155f86bbe837d43f27ec1018b5b6fdc6c372d6f7f2a0fe29da117d53979d9f9c262f886850d92002898682781029b80d4ee923633fc068f979e6c8254be'
             '33dd992fdf886dc458ef43ca836b04514c5a5b9031d4dacf8dd992f46ed88cc55a5872b079ac715e6060e6bfbb7fe5ac21e0a10939770e56455e5148b103cd6f')
