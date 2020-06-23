@@ -48,7 +48,7 @@ _1k_HZ_ticks=
 pkgbase=linux-aufs
 # pkgname=('linux-aufs' 'linux-aufs-headers' 'linux-aufs-docs')
 _major=5.7
-_minor=4
+_minor=5
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
@@ -330,9 +330,9 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('cbd4088816abace8f9c3687ea23836d3bc4084cdc8568b01bf9f41ac80a9b6acc0566246d272876f575a5d1b1f6791f7e2ba90bc39fa53a08bdc871d632ac392'
+sha512sums=('a7c1ff24adbcfc08828f257accc4da51582348a46bbec5339fbe3c62520650ed1b1cd0886d94a475e43c8a84dbd693cf44c9366532ff8435db3c176eedeba000'
             'SKIP'
-            'ce3e1071f9e16133da6bce66023e927b424efdd5d0a407d41f009b6b08e078ad5e18ccb98b639f28343d47b5a9f4a9b58f85584bd0c91b5be1200bed4bf306df'
+            '6223d2a5fdca8a69bc977d4fe3e17469285f179a4670c419b9ae0eea33bbb2cfd54c7e0c5b615f1222c7ef6b678ab0d35fc690121742998350c50f1bc99b4138'
             'SKIP'
             '4725109f0b7cb0744e64483889bbfd379f626b746588bfffa9e1193b9ea990b707b57528776e99a79a37c56b86e7dec602d3e639f4270b4ad5ff02f9fe4b95c2'
             'ef8c9706da28eeaf98028609bf8ef6f558f7701f985c5925be6388dad0fbe8654fc15a803cd14f99ff89c026d471bbddbdff378b18db3f05f3d952faf943af72'
