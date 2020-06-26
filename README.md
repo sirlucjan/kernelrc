@@ -2,7 +2,7 @@
 
 - linux-aufs
 
-- linux-bfq
+- linux-bfq-dev
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/linux-bfq-dev.svg)](https://repology.org/project/linux-bfq-dev/versions)
 
