@@ -2,8 +2,7 @@
 ├── Files
 ├── linux-aufs
 │   ├── config
-│   ├── PKGBUILD
-│   └── sphinx-workaround.patch
+│   └── PKGBUILD
 ├── linux-bfq-dev
 │   ├── config
 │   ├── PKGBUILD
@@ -14,4 +13,4 @@
 │   └── sphinx-workaround.patch
 └── README.md
 
-3 directories, 11 files
+3 directories, 10 files
