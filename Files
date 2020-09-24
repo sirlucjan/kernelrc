@@ -8,8 +8,7 @@
 │   └── PKGBUILD
 ├── linux-uksm
 │   ├── config
-│   ├── PKGBUILD
-│   └── sphinx-workaround.patch
+│   └── PKGBUILD
 └── README.md
 
-3 directories, 9 files
+3 directories, 8 files
