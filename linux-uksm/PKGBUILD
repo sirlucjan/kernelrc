@@ -48,14 +48,14 @@ _1k_HZ_ticks=
 pkgbase=linux-uksm
 # pkgname=('linux-uksm' 'linux-uksm-headers' 'linux-uksm-docs')
 _major=5.9
-_minor=1
+_minor=2
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0.1
+pkgrel=0
 pkgdesc='Linux UKSM'
 arch=('x86_64')
 url="https://github.com/dolohow/uksm"
@@ -65,7 +65,7 @@ makedepends=('kmod' 'bc' 'libelf' 'python-sphinx' 'python-sphinx_rtd_theme'
              'graphviz' 'imagemagick' 'pahole')
 #_lucjanpath="https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/${_major}"
 _lucjanpath="https://gitlab.com/sirlucjan/kernel-patches/raw/master/${_major}"
-_uksm_path="uksm-patches-v4"
+_uksm_path="uksm-patches-v5"
 #_uksm_path="https://raw.githubusercontent.com/dolohow/uksm/master/v5.x"
 #_uksm_path="https://raw.githubusercontent.com/zaza42/uksm/master"
 _uksm_patch="0001-UKSM-for-${_major}.patch"
@@ -323,11 +323,11 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('96af08c1dc964e5dbb3d221880ef8ca246f13370d2dc2f5ae64039f0352efc687c7446a2b4f86dad553b776ee75f78bbf58bb9bc845c9b57a9013ece63264874'
+sha512sums=('98efc0d10e76685eb3280546d8d9b0251062a8ede05959d0de95df18414d2a07ced0a585ba58dd5aad188ad2761d7c5150cd8a8435a6bb53d692702f434732a9'
             'SKIP'
-            '10c2806ef4a6fc2a25aa558e0042e232f64b16ce42c3dbb8e45bbf9ee1b8a21d29ff8391c46c69c18ebb695616a98f509addd57a7d99731112fde1a61a089a2f'
+            'f8fd7e7829c1c539bf2d0ef6ad3a5a9f064d4d1d1031679a816c4bdeea11732713bb9618f8abce9e8456116410692713809eea14dd9af065d37fa03240fb5047'
             'SKIP'
-            'fa79b1abfb94693e2dfcc9348e508e8d35103f5c1e57fc74f28eeee5b237c692994aee94567431976bd4bff9ac5964306194c0970ac8c72a2e9ddf47c0510523'
+            '12a2d17f719edefc19078dc64badf7049132e053bc242546c83063400dc28a7f3f2c81c5f6d8d375e4a176659d69dd4da08d141f67e835fa8aca154e7d1c026e'
             '96427eecb0078ce57a40ef4ee78d3576216f27390ba6b9dfbb851f4d969558a82b698cc633217ad8f6b9d991e7eaebd613ed4bd5741cafe7fa40b2502dacd43a'
             '6f315551225e7d31595bfc6ff2cc0ea46d88c1d0c54024ee29da04c0d2573865d68b78bf2e9bf545e41f3231933bbe08b694d564af857ba5053ee467b6a48cb2'
             '465fb40b6574cb6a64f2975998ccb13047c424553d7ac80ed46b2d8371657a4f3003efc81ec5227e2f09724e08599443cb4b3cd1018d889631e1a215891f10c8'
