@@ -48,14 +48,14 @@ _1k_HZ_ticks=
 pkgbase=linux-bfq-dev
 # pkgname=('linux-bfq-dev' 'linux-bfq-dev-headers' 'linux-bfq-dev-docs')
 _major=5.9
-_minor=13
+_minor=14
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0.2
+pkgrel=0
 pkgdesc='Linux BFQ-dev'
 arch=('x86_64')
 url="https://github.com/sirlucjan/bfq-mq-lucjan"
@@ -338,9 +338,9 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('ec5ca9544775faeb809459f58358b14f06e9d16afff40a017877602efc3117c4a901c8c65bbc3891cf5272a436ac5216d9d5b42c2b92980755ce2f459023eabd'
+sha512sums=('719c32e811602cd3a9429c16c1c1e8684751dffd2fb052357376695a2654ec3f771e321e530ed178223dc581f36fbfa9be362941cf6fd74d2853b393ab357552'
             'SKIP'
-            '655d81c244b8ce85a10668e1215524dc1b1483d5f90ae42369687c1fc9e826da1bf342a6e327e856a139a0b85f45288317c6c54fddabee28e25be5a05421785b'
+            'edae0b636aaee019def2fd6e0ceb965b39455d5a58c39657c52ecc539291db26ca0f447d7987f6b235a9c11006bc33fa4dbc0146f9a73c6161afde25dbca2c1a'
             'SKIP'
             '7d30c34e75c2800d93c01e34ca23a00cda24d2f44bb837a48f6789c50ad69f7db4cc93d1fc75e43cfa4d4f4e9c612330dd595c56c13f8abb5d062338ea30697c'
             '5b959cc4e48c95cdc4e12cae75a15a1984693a0e504cf32db66655923a3a8a62e5d0a10e886fbb0359a800055b4fa7158d7bea0d5f19212fefdd8cf86255f4d5'
