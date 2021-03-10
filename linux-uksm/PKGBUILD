@@ -48,14 +48,14 @@ _1k_HZ_ticks=
 pkgbase=linux-uksm
 # pkgname=('linux-uksm' 'linux-uksm-headers' 'linux-uksm-docs')
 _major=5.11
-_minor=4
+_minor=5
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0.1
+pkgrel=0
 pkgdesc='Linux UKSM'
 arch=('x86_64')
 url="https://github.com/dolohow/uksm"
@@ -321,9 +321,9 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('69bf72b99b0ef55cb9cd8c37bc9670e0dc7d97ab1f5b9f7edd2c161e8489d3aac43eeb23fd52f32fb78a627dc74fbaeaeb7df63bf93420f5ae588fe9f457e98e'
+sha512sums=('8c2a37358b07a5764c23e89d72c0ab68031af0bd9041ffbd4c95597f405fa6f50080d7e62669d55b3fee51e783a10b3548493d3f8171c6ec18cc12682108e97d'
             'SKIP'
-            '0b836560caa64298d76fd959b5d3ef856dda0e372e783f19b4b71df8c57c02ac4efc623d72494b3135d11597787169c5b88a12fc6569c643a24b037e9459ae88'
+            '6c80157e555f60c9615787d45ef1901fd2b4ad770df25c1bafb28f6743b999e5b1ab6c4f6a86527b8fd55c47b6f6de1a08f2cef6f97a73e16f8ea41d023b068d'
             'SKIP'
             '9d38c5672d6e6a08c02e6713b58e03898acdef3f75bb1a96ecd657606d29a69a8cf81bff18af0f56dd75311c5d61c330bbd89a3165bc0e5c6b48b37172716fc9'
             'd4bd0a49d18cea1fb7d2a3d64a2b9e2f18a56071446959b0a12b9234acce86ce1de0124b90357f39cffff744a7e6a8efd98377e9e7ba5eaef0371645833ab49d'
