@@ -72,6 +72,10 @@ _uksm_patch="0001-UKSM-for-${_major}.patch"
 _compiler_path="cpu-patches-v5-sep"
 _compiler_patch="0001-cpu-${_major}-merge-graysky-s-patchset.patch"
 
+### Stable-review
+# In case the stable-review repository ever stopped working,
+# a solution to build rc kernels had to be prepared.
+
 if [ "$_minor" = 0 ]; then
 _patchver=${_major}
 else
