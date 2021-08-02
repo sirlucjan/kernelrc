@@ -48,7 +48,7 @@ _1k_HZ_ticks=
 pkgbase=linux-aufs
 # pkgname=('linux-aufs' 'linux-aufs-headers' 'linux-aufs-docs')
 _major=5.13
-_minor=6
+_minor=7
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
@@ -65,7 +65,7 @@ makedepends=('kmod' 'bc' 'libelf' 'python-sphinx' 'python-sphinx_rtd_theme'
              'graphviz' 'imagemagick' 'pahole' 'cpio' 'perl' 'tar' 'xz')
 #_lucjanpath="https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/${_major}"
 _lucjanpath="https://gitlab.com/sirlucjan/kernel-patches/raw/master/${_major}"
-_aufs_path="aufs-patches"
+_aufs_path="aufs-patches-v2"
 _aufs_ver="20210705"
 _aufs_patch="0001-aufs-${_aufs_ver}.patch"
 _compiler_path="cpu-patches-sep"
@@ -333,11 +333,11 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('3c03d1a8232258e23e6cf3a6f441299ab3ccb422c6d372d4b73ab447c963f3f7add9db9a435f2e63f404b665a8005c7233509090d0c0bac5c06b7387b99c2453'
+sha512sums=('d50ff2c639f89187b261225223e1c1a599e6face488574325f5f2e2fd43cc551a9684484ac7fefacd7fcaf76b7c86fa2679d62d27c4f4d5b7634f2d1739f0ac5'
             'SKIP'
-            '51e75c5f9c520ef464be964c161fcbe27cc34672befc0c31a06d6bb4c32430dc6fa81994a2154c468905dfc0e451b45d48419a9ffc7a034a9c4cd4e7c69f1877'
+            'd3f6a9ccea65c2c154198e65a81a21dd45c187e5cf05f77762f43573e83e365a4f92725b3bf0f3edad4764ac29d0865408a1720edcc10580791d43efe33d1c26'
             'SKIP'
-            'e7b2225236c69a03de7ebb2bb76111f6e6060ac6616bb5a8cb3ba6550346ce91959dd15c6acaf05641e5cc5cb5ee3ebd9129e8cbc711407d788c38ec3c4b68dc'
+            '0ae9e2f4f0edba4f9d8ce5a0a1c0126d0db3401c15d14f26da64f93c2ae1915e5f6d947c7ac68b3aeac7244c746de65f1e883222a73f000ba936198e2da98997'
             '8f7664cf380e413a2c09d3bd774059dad700de81c43e6e234f72f422c3a9f9f2e853ddcd4b0a71c91a0544f84b4a4534d7c8ef5a428b3fe395af87b6a2a22572'
             'fddbdd4897d79b2b511720400a5024731aa400dd1eb394c31046fad6f9613a8d984daf2d267d95688b1de3ee671d1a3f637866a277a98806bf6b801423d4af01'
             'd3dd3f1b9ddcc508fc73c686d72ef8c78fb7ac05fddb3e836ff0aa71e9a7be0bfabd1eedbd05b01ebfb5ad35d88a4e44b89a590eb03b2aade436a6c6cbc544cf')
