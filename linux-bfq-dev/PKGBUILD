@@ -48,14 +48,14 @@ _1k_HZ_ticks=
 pkgbase=linux-bfq-dev
 # pkgname=('linux-bfq-dev' 'linux-bfq-dev-headers' 'linux-bfq-dev-docs')
 _major=5.14
-_minor=5
+_minor=6
 _minorc=$((_minor+1))
 _rcver=rc1
 pkgver=${_major}.${_minorc}
 _stable=${_major}.${_minor}
 _stablerc=${pkgver}-${_rcver}
 _srcname=linux-${_stable}
-pkgrel=0.1
+pkgrel=0
 pkgdesc='Linux BFQ-dev'
 arch=('x86_64')
 url="https://github.com/sirlucjan/bfq-mq-lucjan"
@@ -75,7 +75,7 @@ _lucjanpath="https://gitlab.com/sirlucjan/kernel-patches/raw/master/${_major}"
 #_bfq_rel="r2K210223"
 #_bfq_patch="${_major}-${_bfq_path}-${_bfq_ver}-${_bfq_rel}.patch"
 _bfq_path="bfq-lucjan"
-_bfq_rel="r2K210915v1"
+_bfq_rel="r2K210920v1"
 _bfq_patch="${_major}-${_bfq_path}-${_bfq_rel}.patch"
 _compiler_path="cpu-patches-sep"
 _compiler_patch="0001-cpu-${_major}-merge-graysky-s-patchset.patch"
@@ -352,11 +352,11 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 
-sha512sums=('8213a77210a1dc58adf60bc6afe7d6a5e2931fd838f30683bb6503286b3d291ee01ae1f60adc426a36a03d857c18a5fb4d156041aed4e1542d3456e9e459bd1f'
+sha512sums=('117b466e7edd9e2cac79ae9559ba1e24d7cdf1cc6b277292f08b58baedef7a8d6e17a5a16fb47f662d9b2ac6fc36b2c561dbe4b95d848e645a6c6b27c8504c51'
             'SKIP'
-            '195d31f60ac0c65e087aea37d22ea619ab95c8b9ba07557667f2a1780c2180f1f72e5522c6708527cba113fbc59bed80254fdb52af9198a8cd2691ac23f9a73e'
+            'c966e3616e8aedfc2c7b36a49740ce370ada6448bf5eb6ba20e1fd20663753bfeffcbe272ce9a367af8e15112747a8e24f6c06b873c6156f22db44456c21b991'
             'SKIP'
-            'ce32d3ba18dfbf048db479b0f46059d9ff31f995ed65a29d1338a8fb8650d2935e18493fb30077167fce3fb4dd01b82caec15d063c713c570f9bb897f37b268e'
+            '62d3e809cd7218e3e783b41a5abad0780db17b29f025ee1aca3610ebf058dec8371cb78696677a3913d3217052a5513887b3cc5b285e1942d9421ab4c09c4388'
             'b1aef4f4e7350ce8132e019f76a2ac68bee8a46eb981598fbda11402e62a8bcdfd2f49e5b2cc5dcf2e96c88ad047af12d53abb9fda05c9f7acec37879e5240db'
             '1e4601174a2157397ca836f1fc595b7baa7bc53076b3e62136950caa6d5dd948a773a060fea28e2ab62fb74a1da6b99912e74acdd229353ef6dcec2372149408'
             '57f35645a619959b52cb4cec218b62ce6d9edb9e9a504a6aaf8e5bbfd5752144099a117e9a23336f0928a3237176c81f4dc3c4d11a3f34c3c7961e13c568bcde'
