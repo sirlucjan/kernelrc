@@ -6,7 +6,7 @@
 ├── linux-bfq-dev
 │   ├── config
 │   └── PKGBUILD
-├── linux-uksm
+├── linux-uksmd
 │   ├── config
 │   └── PKGBUILD
 └── README.md
